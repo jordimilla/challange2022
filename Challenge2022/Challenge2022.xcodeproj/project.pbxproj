@@ -14,6 +14,9 @@
 		C48C922D27D0FB0E00CD54C0 /* Challenge2022Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C922C27D0FB0E00CD54C0 /* Challenge2022Tests.swift */; };
 		C48C923727D0FB0E00CD54C0 /* Challenge2022UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C923627D0FB0E00CD54C0 /* Challenge2022UITests.swift */; };
 		C48C923927D0FB0E00CD54C0 /* Challenge2022UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C923827D0FB0E00CD54C0 /* Challenge2022UITestsLaunchTests.swift */; };
+		C48C925027D141CF00CD54C0 /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = C48C924F27D141CF00CD54C0 /* Data */; };
+		C48C925627D145B000CD54C0 /* DependenciesResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C925527D145B000CD54C0 /* DependenciesResolver.swift */; };
+		C48C925827D145DF00CD54C0 /* Presentation in Frameworks */ = {isa = PBXBuildFile; productRef = C48C925727D145DF00CD54C0 /* Presentation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,7 @@
 		C48C923627D0FB0E00CD54C0 /* Challenge2022UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge2022UITests.swift; sourceTree = "<group>"; };
 		C48C923827D0FB0E00CD54C0 /* Challenge2022UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge2022UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C48C924727D0FD7300CD54C0 /* ChallengePackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ChallengePackage; path = ../ChallengePackage; sourceTree = "<group>"; };
+		C48C925527D145B000CD54C0 /* DependenciesResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesResolver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C48C925827D145DF00CD54C0 /* Presentation in Frameworks */,
+				C48C925027D141CF00CD54C0 /* Data in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +86,7 @@
 				C48C922B27D0FB0E00CD54C0 /* Challenge2022Tests */,
 				C48C923527D0FB0E00CD54C0 /* Challenge2022UITests */,
 				C48C921927D0FB0C00CD54C0 /* Products */,
+				C48C924A27D1255100CD54C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +107,7 @@
 				C48C921D27D0FB0C00CD54C0 /* ContentView.swift */,
 				C48C921F27D0FB0D00CD54C0 /* Assets.xcassets */,
 				C48C922127D0FB0D00CD54C0 /* Preview Content */,
+				C48C925527D145B000CD54C0 /* DependenciesResolver.swift */,
 			);
 			path = Challenge2022;
 			sourceTree = "<group>";
@@ -129,6 +137,13 @@
 			path = Challenge2022UITests;
 			sourceTree = "<group>";
 		};
+		C48C924A27D1255100CD54C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +160,10 @@
 			dependencies = (
 			);
 			name = Challenge2022;
+			packageProductDependencies = (
+				C48C924F27D141CF00CD54C0 /* Data */,
+				C48C925727D145DF00CD54C0 /* Presentation */,
+			);
 			productName = Challenge2022;
 			productReference = C48C921827D0FB0C00CD54C0 /* Challenge2022.app */;
 			productType = "com.apple.product-type.application";
@@ -259,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C48C925627D145B000CD54C0 /* DependenciesResolver.swift in Sources */,
 				C48C921E27D0FB0C00CD54C0 /* ContentView.swift in Sources */,
 				C48C921C27D0FB0C00CD54C0 /* Challenge2022App.swift in Sources */,
 			);
@@ -480,7 +500,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D7R9UAAYXJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Challenge2022Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -500,7 +520,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D7R9UAAYXJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Challenge2022Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -587,6 +607,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C48C924F27D141CF00CD54C0 /* Data */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Data;
+		};
+		C48C925727D145DF00CD54C0 /* Presentation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Presentation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C48C921027D0FB0C00CD54C0 /* Project object */;
 }

@@ -1,11 +1,5 @@
-//
-//  ContentView.swift
-//  Challenge2022
-//
-//  Created by Jordi Milla on 3/3/22.
-//
-
 import SwiftUI
+import Data
 
 struct ContentView: View {
     var body: some View {
