@@ -2,12 +2,16 @@ import SwiftUI
 
 struct ListMoviesView: View {
     
-    var store: ListMoviesViewStore
+    @ObservedObject var store: ListMoviesViewStore
+    
     var onLoaded: () -> Void = {}
     var goToDetail: () -> Void = {}
-    
+
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            .onAppear {
+                onLoaded()
+            }
     }
 }
 

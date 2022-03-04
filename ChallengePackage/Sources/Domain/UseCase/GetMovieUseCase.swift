@@ -10,9 +10,9 @@ public class GetMovieUseCaseParams: UseCaseParams {
 
 public class GetMovieUseCase: QueryCallableUseCase<Movie, GetMovieUseCaseParams> {
     
-    private let carsRepository: CarsRepository
+    private let carsRepository: MoviesRepository
     
-    public init(carsRepository: CarsRepository) {
+    public init(carsRepository: MoviesRepository) {
         self.carsRepository = carsRepository
     }
     
@@ -22,6 +22,6 @@ public class GetMovieUseCase: QueryCallableUseCase<Movie, GetMovieUseCaseParams>
             completion(.failure(DomainError.notParams))
             return
         }
-        carsRepository.getCardBy(id: params.id, completion: completion)
+        carsRepository.getMoviesBy(id: params.id, completion: completion)
     }
 }

@@ -18,7 +18,6 @@
 		C48C925A27D151B400CD54C0 /* MoviesFeatureAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C925927D151B400CD54C0 /* MoviesFeatureAssembly.swift */; };
 		C49A6DCB27D23D6B003DE8DD /* UseCaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49A6DCA27D23D6B003DE8DD /* UseCaseAssembly.swift */; };
 		C49A6DCD27D23D6F003DE8DD /* RepositoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49A6DCC27D23D6F003DE8DD /* RepositoryAssembly.swift */; };
-		C49A6DCF27D23D7A003DE8DD /* ApiAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49A6DCE27D23D7A003DE8DD /* ApiAssembly.swift */; };
 		C49A6DD127D24B0B003DE8DD /* PresentationSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C49A6DD027D24B0B003DE8DD /* PresentationSwiftUI */; };
 		C49A6DD527D24C40003DE8DD /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = C49A6DD427D24C40003DE8DD /* Domain */; };
 /* End PBXBuildFile section */
@@ -55,7 +54,6 @@
 		C48C925927D151B400CD54C0 /* MoviesFeatureAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesFeatureAssembly.swift; sourceTree = "<group>"; };
 		C49A6DCA27D23D6B003DE8DD /* UseCaseAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseAssembly.swift; sourceTree = "<group>"; };
 		C49A6DCC27D23D6F003DE8DD /* RepositoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryAssembly.swift; sourceTree = "<group>"; };
-		C49A6DCE27D23D7A003DE8DD /* ApiAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				C48C925927D151B400CD54C0 /* MoviesFeatureAssembly.swift */,
-				C49A6DCE27D23D7A003DE8DD /* ApiAssembly.swift */,
 				C49A6DCC27D23D6F003DE8DD /* RepositoryAssembly.swift */,
 				C49A6DCA27D23D6B003DE8DD /* UseCaseAssembly.swift */,
 			);
@@ -298,7 +295,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C49A6DCF27D23D7A003DE8DD /* ApiAssembly.swift in Sources */,
 				C48C925A27D151B400CD54C0 /* MoviesFeatureAssembly.swift in Sources */,
 				C49A6DCB27D23D6B003DE8DD /* UseCaseAssembly.swift in Sources */,
 				C48C921E27D0FB0C00CD54C0 /* ContentView.swift in Sources */,

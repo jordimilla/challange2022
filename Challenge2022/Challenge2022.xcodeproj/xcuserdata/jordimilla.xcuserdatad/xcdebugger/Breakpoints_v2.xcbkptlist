@@ -14,8 +14,8 @@
             filePath = "../ChallengePackage/Sources/PresentationSwiftUI/List/ListMoviesView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "10"
-            endingLineNumber = "10"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -23,32 +23,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "133ADC33-5BDC-439B-A6D5-31BDEB7FD5AC"
+            uuid = "D3873BF2-F14F-424C-BDBC-57BA30D7F185"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../ChallengePackage/Sources/PresentationSwiftUI/List/DI/ListAssembly.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "requestListMovies()"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "build()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9FE08CF5-7A6D-457D-9C0A-9A92D71770B0"
+            uuid = "6462848B-0369-463A-95A7-B4D511327C21"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../ChallengePackage/Sources/PresentationSwiftUI/List/DI/ListAssembly.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "requestListMovies()"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "build()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

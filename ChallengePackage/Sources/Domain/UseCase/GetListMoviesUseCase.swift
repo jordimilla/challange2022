@@ -2,15 +2,15 @@ import Foundation
 
 public class GetListMoviesUseCase: QueryCallableUseCase<[ListMovies], NotUseCaseParams> {
     
-    private let carsRepository: CarsRepository
+    private let carsRepository: MoviesRepository
     
-    public init(carsRepository: CarsRepository) {
+    public init(carsRepository: MoviesRepository) {
         self.carsRepository = carsRepository
     }
     
     public override func execute(params: NotUseCaseParams? = nil,
                                  completion: @escaping ResultCompletion<[ListMovies]>) {
-        carsRepository.getCars(completion: completion)
+        carsRepository.getMovies(completion: completion)
     }
 }
 
