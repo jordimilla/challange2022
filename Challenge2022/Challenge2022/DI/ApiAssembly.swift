@@ -1,4 +1,5 @@
 import Foundation
+import Data
 
 public enum Environment: Equatable {
     //The idea of ​​this eum is to have a relationship with environment variables in the project

@@ -10,7 +10,7 @@ let package = Package(
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
-        .library( name: "Presentation",targets: ["Presentation"]),
+        .library( name: "PresentationSwiftUI",targets: ["PresentationSwiftUI"]),
         
         .library( name: "Domain",targets: ["Domain"]),
         
@@ -24,8 +24,8 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(name: "Presentation", dependencies: ["Domain"]),
-        .testTarget(name: "PresentationTest", dependencies: ["Presentation"]),
+        .target(name: "PresentationSwiftUI", dependencies: ["Domain"]),
+        .testTarget(name: "PresentationSwiftUITest", dependencies: ["PresentationSwiftUI"]),
         
         .target(name: "Domain", dependencies: []),
         .testTarget(name: "DomainTest", dependencies: ["Domain"]),

@@ -1,13 +1,11 @@
-//
-//  SwiftUIView.swift
-//  
-//
-//  Created by Jordi Milla on 3/3/22.
-//
-
 import SwiftUI
 
-struct ListView: View {
+struct ListMoviesView: View {
+    
+    var store: ListMoviesViewStore
+    var onLoaded: () -> Void = {}
+    var goToDetail: () -> Void = {}
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
@@ -15,6 +13,9 @@ struct ListView: View {
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        ListView()
+        
+        ListMoviesView(store: .init())
     }
+
 }
+

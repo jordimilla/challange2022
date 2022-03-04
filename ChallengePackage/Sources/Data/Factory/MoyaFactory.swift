@@ -3,7 +3,7 @@ import Moya
 
 public class MoyaFactory {
         
-    static func getProvider<Target: TargetType>(baseUrlProvider: @escaping () -> String) -> MoyaProvider<Target> {
+    public static func getProvider<Target: TargetType>(baseUrlProvider: @escaping () -> String) -> MoyaProvider<Target> {
         return  MoyaProvider<Target>(
             endpointClosure: { (target: Target) -> Moya.Endpoint in rewriteBaseUrl(baseUrlProvider(), target)}
         )

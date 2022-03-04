@@ -1,15 +1,15 @@
 import Foundation
 import Domain
 
-final class CarsRepositoryImpl: CarsRepository {
+public class CarsRepositoryImpl: CarsRepository {
 
     private let apiManager: ApiManager
     
-    init(apiManager: ApiManager) {
+    public init(apiManager: ApiManager) {
         self.apiManager = apiManager
     }
     
-    func getCars(completion: @escaping (Result<[ListMovies], Swift.Error>) -> Void) {
+    public func getCars(completion: @escaping (Result<[ListMovies], Swift.Error>) -> Void) {
         apiManager.getCars(completion: { result in
             switch result {
             case .success(let response):
@@ -22,7 +22,7 @@ final class CarsRepositoryImpl: CarsRepository {
         })
     }
     
-    func getCardBy(id: String, completion: @escaping (Result<Movie, Swift.Error>) -> Void) {
+    public func getCardBy(id: String, completion: @escaping (Result<Movie, Swift.Error>) -> Void) {
         apiManager.getCardBy(id: id, completion: { result in
             switch result {
             case .success(let response):
