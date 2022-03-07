@@ -1,6 +1,6 @@
 import Foundation
 
-public struct MovieTO: Decodable, Encodable {
+public struct EpisodeTO: Decodable, Encodable {
     var title: String
     var description: String
     var image: String

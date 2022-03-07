@@ -10,14 +10,14 @@ public enum Environment: Equatable {
     public var apiUrl: String {
         switch self {
         case .prod: return "https://gizmo.rakuten.tv/"
-        case .pre: return "https://gizmo.rakuten.tv/"
+        case .pre: return "https://api.tvmaze.com/"
         }
     }
 }
 
 final class RepositoryAssembly {
     
-    static func makeCarsRepository() -> MoviesRepository {
-        return MoviesRepositoryImpl(apiManager: ApiAssembly.makeApiManager(url: Environment.pre.apiUrl))
+    static func makeSeriesRepository() -> SeriesRepository {
+        return SeriesRepositoryImpl(apiManager: ApiAssembly.makeApiManager(url: Environment.pre.apiUrl))
     }
 }

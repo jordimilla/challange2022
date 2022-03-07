@@ -5,8 +5,16 @@ public  class UseCaseAssembly {}
 
 extension UseCaseAssembly {
     
-    public static func makeGetListMoviesUseCase() -> QueryCallableUseCase<[ListMovies], NotUseCaseParams> {
-        GetListMoviesUseCase(carsRepository: RepositoryAssembly.makeCarsRepository())
+    public static func makeGetShowsUseCase() -> QueryCallableUseCase<[Season], GetShowsUseCaseParams> {
+        GetShowsUseCase(seriesRepository: RepositoryAssembly.makeSeriesRepository())
+    }
+    
+    public static func makeGetSeasonsUseCase() -> QueryCallableUseCase<[Season], GetSeasonsUseCaseParams> {
+        GetSeasonsUseCase(seriesRepository: RepositoryAssembly.makeSeriesRepository())
+    }
+    
+    public static func makeGetEpisodesUseCase() -> QueryCallableUseCase<[Episode], GetEpisodeUseCaseParams> {
+        GetEpisodeUseCase(seriesRepository: RepositoryAssembly.makeSeriesRepository())
     }
 }
 

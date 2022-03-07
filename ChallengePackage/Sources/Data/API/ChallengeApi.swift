@@ -3,8 +3,9 @@ import Moya
 
 enum ChallengeApi: Equatable {
     
-    case getMovies
-    case getMovieBy(id: String)
+    case getShows(page: Int)
+    case getSeasons(id: Int)
+    case getMovieBy(id: Int)
     
     static func == (lhs: ChallengeApi, rhs: ChallengeApi) -> Bool {
         return lhs.path == rhs.path && lhs.method == rhs.method
@@ -14,7 +15,7 @@ enum ChallengeApi: Equatable {
 extension ChallengeApi: TargetType, AccessTokenAuthorizable {
     var authorizationType: AuthorizationType? {
         switch self {
-        case .getMovies, .getMovieBy:
+        case .getShows, .getSeasons, .getMovieBy:
             return .bearer
         }
     }
@@ -26,16 +27,19 @@ extension ChallengeApi: TargetType, AccessTokenAuthorizable {
     
     var path: String {
         switch self {
-        case .getMovies:
-            return "v3/lists/estrenos-imprescindibles-en-taquilla?classification_id=6&device_identifier=ios&locale=es&market_code=es"
+        case .getShows:
+            return "shows"
+        case .getSeasons(let id):
+            return "shows/\(id)/seasons"
         case .getMovieBy(let id):
-            return "v3/movies/\(id)?classification_id=6&device_identifier=ios&"
+            return "seasons/\(id)/episodes"
         }
     }
     
     var method: Moya.Method {
         switch self {
-        case .getMovies,
+        case .getShows,
+             .getSeasons,
              .getMovieBy:
             return .get
         }
@@ -43,9 +47,10 @@ extension ChallengeApi: TargetType, AccessTokenAuthorizable {
 
     public var task: Task {
         switch self {
-        case .getMovies:
-            return .requestPlain
-        case .getMovieBy:
+        case .getShows(let page):
+            return .requestParameters(parameters: ["page": page], encoding: URLEncoding.default)
+        case .getSeasons,
+            .getMovieBy:
             return .requestPlain
         }
     }

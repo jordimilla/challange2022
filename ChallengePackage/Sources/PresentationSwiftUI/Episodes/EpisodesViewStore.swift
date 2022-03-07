@@ -3,9 +3,9 @@ import Domain
 import Combine
 import SwiftUI
 
-public final class ListMoviesViewStore: ObservableObject {
+public final class EpisodesViewStore: ObservableObject {
     
-    @Published var movies: [ListMovies] = []
+    @Published var episodes: [Episode] = []
     
     init() {
     

@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Movie: Codable {
+public struct Episode: Codable {
     
     var title: String
     var description: String

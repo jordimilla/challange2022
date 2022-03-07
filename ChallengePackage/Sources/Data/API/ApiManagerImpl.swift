@@ -1,5 +1,6 @@
 import Foundation
 import Moya
+import Combine
 
 public class ApiManagerImpl: ApiManager {
 
@@ -12,14 +13,23 @@ public class ApiManagerImpl: ApiManager {
 
 extension ApiManagerImpl {
     
-    public func getMovies(completion: @escaping (Result<BaseResponseArray<ListMoviesTO>, Error>) -> Void) {
-        provider.requestFilterErrors(.getMovies,
+    public func getShows(page: Int, completion: @escaping (Result<[SeasonTO], Error>) -> Void) {
+        provider.requestFilterErrors(.getShows(page: page),
                                      completion: MoyaCompletionTransformer.mapJsonDecoder(completion))
     }
     
-    public func getMoviesBy(id: String, completion: @escaping (Result<BaseResponse<MovieTO>, Error>) -> Void) {
+    public func getSeasons(id: Int, completion: @escaping (Result<[SeasonTO], Error>) -> Void) {
+        provider.requestFilterErrors(.getSeasons(id: id),
+                                     completion: MoyaCompletionTransformer.mapJsonDecoder(completion))
+    }
+    
+    public func getEpisodes(id: Int, completion: @escaping (Result<[EpisodeTO], Error>) -> Void) {
         provider.requestFilterErrors(.getMovieBy(id: id),
                                      completion: MoyaCompletionTransformer.mapJsonDecoder(completion))
     }
+    
+//    public func getMoviesCombine() -> AnyPublisher<ListMoviesTO, Error> {
+//        return provider.execute(.getMovies)
+//    }
 }
 

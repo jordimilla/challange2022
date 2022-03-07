@@ -1,8 +1,8 @@
 import SwiftUI
 
-struct ListMoviesView: View {
+struct SeasonsView: View {
     
-    @ObservedObject var store: ListMoviesViewStore
+    @ObservedObject var store: SeasonsViewStore
     
     var onLoaded: () -> Void = {}
     var goToDetail: () -> Void = {}
@@ -15,10 +15,10 @@ struct ListMoviesView: View {
     }
 }
 
-struct ListView_Previews: PreviewProvider {
+struct SeasonsView_Previews: PreviewProvider {
     static var previews: some View {
         
-        ListMoviesView(store: .init())
+        SeasonsView(store: .init())
     }
 
 }

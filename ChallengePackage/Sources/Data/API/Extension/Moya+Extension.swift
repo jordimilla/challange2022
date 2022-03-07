@@ -1,5 +1,6 @@
 import Foundation
 import Moya
+import Combine
 
 // MARK: - Transformer
 typealias MoyaInternalApiCompletation = (Result<Moya.Response, Error>) -> Void
@@ -25,6 +26,7 @@ class MoyaCompletionTransformer {
         }
     }
     
+    
 }
 
 // MARK: - MoyaProvider
@@ -36,10 +38,21 @@ extension MoyaProvider where Target: TargetType {
             switch result {
             case .success(let response):
                 completion(.success(response))
-
+                
             case .failure(let error):
                 return completion(.failure(error))
             }
         }
     }
+    
+//    func execute<T: Decodable>(_ target: Target) -> AnyPublisher<T, Error> {
+//        return request(target)
+//            .tryMap { result -> T in
+//                let value = try JSONDecoder().decode(T.self, from: result.data)
+//                return value
+//                
+//            }
+//            .eraseToAnyPublisher()
+//    }
 }
+
