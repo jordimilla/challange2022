@@ -170,9 +170,9 @@
 		C4C2E79227D6652700FA7C5E /* Shows */ = {
 			isa = PBXGroup;
 			children = (
-				C4C2E79327D6652700FA7C5E /* ShowsViewStore.swift */,
 				C4C2E79427D6652700FA7C5E /* DI */,
 				C4C2E79627D6652700FA7C5E /* ShowsView.swift */,
+				C4C2E79327D6652700FA7C5E /* ShowsViewStore.swift */,
 			);
 			path = Shows;
 			sourceTree = "<group>";
