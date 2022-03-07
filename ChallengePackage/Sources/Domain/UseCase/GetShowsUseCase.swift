@@ -8,7 +8,7 @@ public class GetShowsUseCaseParams: UseCaseParams {
     }
 }
 
-public class GetShowsUseCase: QueryCallableUseCase<[Season], GetShowsUseCaseParams> {
+public class GetShowsUseCase: QueryCallableUseCase<[Show], GetShowsUseCaseParams> {
     
     private let seriesRepository: SeriesRepository
     
@@ -17,7 +17,7 @@ public class GetShowsUseCase: QueryCallableUseCase<[Season], GetShowsUseCasePara
     }
     
     public override func execute(params: GetShowsUseCaseParams? = nil,
-                                 completion: @escaping ResultCompletion<[Season]>) {
+                                 completion: @escaping ResultCompletion<[Show]>) {
         guard let params = params else {
             completion(.failure(DomainError.notParams))
             return

@@ -1,6 +1,6 @@
 import Foundation
-import Domain
 import Data
+import Domain
 
 final class RepositoryAssembly {
     

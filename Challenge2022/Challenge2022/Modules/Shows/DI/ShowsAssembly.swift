@@ -3,9 +3,9 @@ import SwiftUI
 
 public class ShowsAssembly {
     
-    private let getShowsUseCase: QueryCallableUseCase<[Season], GetShowsUseCaseParams>
+    private let getShowsUseCase: QueryCallableUseCase<[Show], GetShowsUseCaseParams>
 
-    public init(getShowsUseCase: QueryCallableUseCase<[Season], GetShowsUseCaseParams>) {
+    public init(getShowsUseCase: QueryCallableUseCase<[Show], GetShowsUseCaseParams>) {
         self.getShowsUseCase = getShowsUseCase
     }
     

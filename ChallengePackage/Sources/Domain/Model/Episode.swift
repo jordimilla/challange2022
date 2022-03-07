@@ -1,14 +1,25 @@
 import Foundation
 
-public struct Episode: Codable {
+public struct Episode: Codable, Identifiable  {
+    public var id: Int
+    public var name: String
+    public var summary: String
+    public var image: EpisodeImage
     
-    var title: String
-    var description: String
-    var image: String
-    
-    public init(title: String, description: String, image: String) {
-        self.title = title
-        self.description = description
+    public init(id: Int, name: String, summary: String, image: EpisodeImage) {
+        self.id = id
+        self.name = name
+        self.summary = summary
         self.image = image
+    }
+}
+
+public struct EpisodeImage: Codable {
+    public var medium: String
+    public var original: String
+    
+    public init(medium: String, original: String) {
+        self.medium = medium
+        self.original = original
     }
 }

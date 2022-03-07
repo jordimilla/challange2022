@@ -8,15 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		C48C921C27D0FB0C00CD54C0 /* Challenge2022App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C921B27D0FB0C00CD54C0 /* Challenge2022App.swift */; };
-		C48C921E27D0FB0C00CD54C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C921D27D0FB0C00CD54C0 /* ContentView.swift */; };
 		C48C922027D0FB0D00CD54C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48C921F27D0FB0D00CD54C0 /* Assets.xcassets */; };
 		C48C922327D0FB0D00CD54C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48C922227D0FB0D00CD54C0 /* Preview Assets.xcassets */; };
 		C48C922D27D0FB0E00CD54C0 /* Challenge2022Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C922C27D0FB0E00CD54C0 /* Challenge2022Tests.swift */; };
 		C48C923727D0FB0E00CD54C0 /* Challenge2022UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C923627D0FB0E00CD54C0 /* Challenge2022UITests.swift */; };
 		C48C923927D0FB0E00CD54C0 /* Challenge2022UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C923827D0FB0E00CD54C0 /* Challenge2022UITestsLaunchTests.swift */; };
 		C48C925027D141CF00CD54C0 /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = C48C924F27D141CF00CD54C0 /* Data */; };
-		C49A6DD127D24B0B003DE8DD /* PresentationSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C49A6DD027D24B0B003DE8DD /* PresentationSwiftUI */; };
 		C49A6DD527D24C40003DE8DD /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = C49A6DD427D24C40003DE8DD /* Domain */; };
+		C4C2E7A527D665AD00FA7C5E /* SeriesFeatureAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C2E7A327D6652800FA7C5E /* SeriesFeatureAssembly.swift */; };
+		C4C2E7A627D665AF00FA7C5E /* RepositoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C2E7A227D6652800FA7C5E /* RepositoryAssembly.swift */; };
+		C4C2E7A727D665B100FA7C5E /* UseCaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C2E7A427D6652800FA7C5E /* UseCaseAssembly.swift */; };
+		C4C2E7A827D665B400FA7C5E /* EpisodesViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C2E79F27D6652700FA7C5E /* EpisodesViewStore.swift */; };
+		C4C2E7A927D665B700FA7C5E /* EpisodesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C2E79E27D6652700FA7C5E /* EpisodesAssembly.swift */; };
+		C4C2E7AA27D665B900FA7C5E /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C2E7A027D6652700FA7C5E /* EpisodesView.swift */; };
+		C4C2E7AB27D665BD00FA7C5E /* SeasonsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C2E79927D6652700FA7C5E /* SeasonsAssembly.swift */; };
+		C4C2E7AC27D665BF00FA7C5E /* SeasonsViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C2E79A27D6652700FA7C5E /* SeasonsViewStore.swift */; };
+		C4C2E7AD27D665C100FA7C5E /* SeasonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C2E79B27D6652700FA7C5E /* SeasonsView.swift */; };
+		C4C2E7AE27D665C300FA7C5E /* ShowsViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C2E79327D6652700FA7C5E /* ShowsViewStore.swift */; };
+		C4C2E7AF27D665C600FA7C5E /* ShowsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C2E79527D6652700FA7C5E /* ShowsAssembly.swift */; };
+		C4C2E7B027D665C800FA7C5E /* ShowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C2E79627D6652700FA7C5E /* ShowsView.swift */; };
+		C4C2E7B527D665FB00FA7C5E /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C2E7B427D665FB00FA7C5E /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +50,6 @@
 /* Begin PBXFileReference section */
 		C48C921827D0FB0C00CD54C0 /* Challenge2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge2022.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48C921B27D0FB0C00CD54C0 /* Challenge2022App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge2022App.swift; sourceTree = "<group>"; };
-		C48C921D27D0FB0C00CD54C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C48C921F27D0FB0D00CD54C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C48C922227D0FB0D00CD54C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C48C922827D0FB0E00CD54C0 /* Challenge2022Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Challenge2022Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +58,19 @@
 		C48C923627D0FB0E00CD54C0 /* Challenge2022UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge2022UITests.swift; sourceTree = "<group>"; };
 		C48C923827D0FB0E00CD54C0 /* Challenge2022UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge2022UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C48C924727D0FD7300CD54C0 /* ChallengePackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ChallengePackage; path = ../ChallengePackage; sourceTree = "<group>"; };
+		C4C2E79327D6652700FA7C5E /* ShowsViewStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsViewStore.swift; sourceTree = "<group>"; };
+		C4C2E79527D6652700FA7C5E /* ShowsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsAssembly.swift; sourceTree = "<group>"; };
+		C4C2E79627D6652700FA7C5E /* ShowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsView.swift; sourceTree = "<group>"; };
+		C4C2E79927D6652700FA7C5E /* SeasonsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsAssembly.swift; sourceTree = "<group>"; };
+		C4C2E79A27D6652700FA7C5E /* SeasonsViewStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsViewStore.swift; sourceTree = "<group>"; };
+		C4C2E79B27D6652700FA7C5E /* SeasonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsView.swift; sourceTree = "<group>"; };
+		C4C2E79E27D6652700FA7C5E /* EpisodesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesAssembly.swift; sourceTree = "<group>"; };
+		C4C2E79F27D6652700FA7C5E /* EpisodesViewStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewStore.swift; sourceTree = "<group>"; };
+		C4C2E7A027D6652700FA7C5E /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
+		C4C2E7A227D6652800FA7C5E /* RepositoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryAssembly.swift; sourceTree = "<group>"; };
+		C4C2E7A327D6652800FA7C5E /* SeriesFeatureAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesFeatureAssembly.swift; sourceTree = "<group>"; };
+		C4C2E7A427D6652800FA7C5E /* UseCaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseAssembly.swift; sourceTree = "<group>"; };
+		C4C2E7B427D665FB00FA7C5E /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +79,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C49A6DD527D24C40003DE8DD /* Domain in Frameworks */,
-				C49A6DD127D24B0B003DE8DD /* PresentationSwiftUI in Frameworks */,
 				C48C925027D141CF00CD54C0 /* Data in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,8 +125,10 @@
 		C48C921A27D0FB0C00CD54C0 /* Challenge2022 */ = {
 			isa = PBXGroup;
 			children = (
+				C4C2E7B327D665FB00FA7C5E /* Extensions */,
 				C48C921B27D0FB0C00CD54C0 /* Challenge2022App.swift */,
-				C48C921D27D0FB0C00CD54C0 /* ContentView.swift */,
+				C4C2E7A127D6652800FA7C5E /* DI */,
+				C4C2E7B627D6665400FA7C5E /* Modules */,
 				C48C921F27D0FB0D00CD54C0 /* Assets.xcassets */,
 				C48C922127D0FB0D00CD54C0 /* Preview Content */,
 			);
@@ -143,6 +167,88 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C4C2E79227D6652700FA7C5E /* Shows */ = {
+			isa = PBXGroup;
+			children = (
+				C4C2E79327D6652700FA7C5E /* ShowsViewStore.swift */,
+				C4C2E79427D6652700FA7C5E /* DI */,
+				C4C2E79627D6652700FA7C5E /* ShowsView.swift */,
+			);
+			path = Shows;
+			sourceTree = "<group>";
+		};
+		C4C2E79427D6652700FA7C5E /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				C4C2E79527D6652700FA7C5E /* ShowsAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		C4C2E79727D6652700FA7C5E /* Seasons */ = {
+			isa = PBXGroup;
+			children = (
+				C4C2E79827D6652700FA7C5E /* DI */,
+				C4C2E79A27D6652700FA7C5E /* SeasonsViewStore.swift */,
+				C4C2E79B27D6652700FA7C5E /* SeasonsView.swift */,
+			);
+			path = Seasons;
+			sourceTree = "<group>";
+		};
+		C4C2E79827D6652700FA7C5E /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				C4C2E79927D6652700FA7C5E /* SeasonsAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		C4C2E79C27D6652700FA7C5E /* Episodes */ = {
+			isa = PBXGroup;
+			children = (
+				C4C2E79D27D6652700FA7C5E /* DI */,
+				C4C2E79F27D6652700FA7C5E /* EpisodesViewStore.swift */,
+				C4C2E7A027D6652700FA7C5E /* EpisodesView.swift */,
+			);
+			path = Episodes;
+			sourceTree = "<group>";
+		};
+		C4C2E79D27D6652700FA7C5E /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				C4C2E79E27D6652700FA7C5E /* EpisodesAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		C4C2E7A127D6652800FA7C5E /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				C4C2E7A227D6652800FA7C5E /* RepositoryAssembly.swift */,
+				C4C2E7A327D6652800FA7C5E /* SeriesFeatureAssembly.swift */,
+				C4C2E7A427D6652800FA7C5E /* UseCaseAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		C4C2E7B327D665FB00FA7C5E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C4C2E7B427D665FB00FA7C5E /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C4C2E7B627D6665400FA7C5E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C4C2E79C27D6652700FA7C5E /* Episodes */,
+				C4C2E79727D6652700FA7C5E /* Seasons */,
+				C4C2E79227D6652700FA7C5E /* Shows */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,7 +267,6 @@
 			name = Challenge2022;
 			packageProductDependencies = (
 				C48C924F27D141CF00CD54C0 /* Data */,
-				C49A6DD027D24B0B003DE8DD /* PresentationSwiftUI */,
 				C49A6DD427D24C40003DE8DD /* Domain */,
 			);
 			productName = Challenge2022;
@@ -278,8 +383,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C48C921E27D0FB0C00CD54C0 /* ContentView.swift in Sources */,
 				C48C921C27D0FB0C00CD54C0 /* Challenge2022App.swift in Sources */,
+				C4C2E7A927D665B700FA7C5E /* EpisodesAssembly.swift in Sources */,
+				C4C2E7AF27D665C600FA7C5E /* ShowsAssembly.swift in Sources */,
+				C4C2E7A727D665B100FA7C5E /* UseCaseAssembly.swift in Sources */,
+				C4C2E7A627D665AF00FA7C5E /* RepositoryAssembly.swift in Sources */,
+				C4C2E7AE27D665C300FA7C5E /* ShowsViewStore.swift in Sources */,
+				C4C2E7AC27D665BF00FA7C5E /* SeasonsViewStore.swift in Sources */,
+				C4C2E7AB27D665BD00FA7C5E /* SeasonsAssembly.swift in Sources */,
+				C4C2E7B527D665FB00FA7C5E /* String+Extensions.swift in Sources */,
+				C4C2E7A827D665B400FA7C5E /* EpisodesViewStore.swift in Sources */,
+				C4C2E7A527D665AD00FA7C5E /* SeriesFeatureAssembly.swift in Sources */,
+				C4C2E7B027D665C800FA7C5E /* ShowsView.swift in Sources */,
+				C4C2E7AA27D665B900FA7C5E /* EpisodesView.swift in Sources */,
+				C4C2E7AD27D665C100FA7C5E /* SeasonsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,10 +728,6 @@
 		C48C924F27D141CF00CD54C0 /* Data */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Data;
-		};
-		C49A6DD027D24B0B003DE8DD /* PresentationSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = PresentationSwiftUI;
 		};
 		C49A6DD427D24C40003DE8DD /* Domain */ = {
 			isa = XCSwiftPackageProductDependency;

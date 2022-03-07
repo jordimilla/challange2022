@@ -5,7 +5,7 @@ public  class UseCaseAssembly {}
 
 extension UseCaseAssembly {
     
-    public static func makeGetShowsUseCase() -> QueryCallableUseCase<[Season], GetShowsUseCaseParams> {
+    public static func makeGetShowsUseCase() -> QueryCallableUseCase<[Show], GetShowsUseCaseParams> {
         GetShowsUseCase(seriesRepository: RepositoryAssembly.makeSeriesRepository())
     }
     

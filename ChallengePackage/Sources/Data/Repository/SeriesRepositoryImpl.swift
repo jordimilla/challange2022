@@ -9,11 +9,11 @@ public class SeriesRepositoryImpl: SeriesRepository {
         self.apiManager = apiManager
     }
     
-    public func getShows(page: Int, completion: @escaping (Result<[Season], Swift.Error>) -> Void) {
+    public func getShows(page: Int, completion: @escaping (Result<[Show], Swift.Error>) -> Void) {
         apiManager.getShows(page: page, completion: { result in
             switch result {
             case .success(let response):
-                let map = ListMapper.map(input: response)
+                let map = ShowMapper.map(input: response)
                 completion(.success(map))
                 
             case .failure(let error):
@@ -26,7 +26,7 @@ public class SeriesRepositoryImpl: SeriesRepository {
         apiManager.getSeasons(id: id, completion: { result in
             switch result {
             case .success(let response):
-                let map = ListMapper.map(input: response)
+                let map = SeasonMapper.map(input: response)
                 completion(.success(map))
                 
             case .failure(let error):
@@ -39,7 +39,7 @@ public class SeriesRepositoryImpl: SeriesRepository {
         apiManager.getEpisodes(id: id, completion: { result in
             switch result {
             case .success(let response):
-                let map = MovieMapper.map(input: response)
+                let map = EpisodeMapper.map(input: response)
                 completion(.success(map))
                 
             case .failure(let error):

@@ -1,4 +1,5 @@
 import SwiftUI
+import Domain
 
 struct SeasonsView: View {
     
@@ -8,10 +9,16 @@ struct SeasonsView: View {
     var goToDetail: () -> Void = {}
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-            .onAppear {
-                onLoaded()
+        List(store.seasons.indices, id: \.self) { i in
+            let season: Season = store.seasons[i]
+            NavigationLink(destination: SeriesFeatureAssembly.episodesFeature) {
+                HStack {
+                    Text("Season \(i + 1)")
+                }
             }
+        }.onAppear {
+            onLoaded()
+        }.background(.black)
     }
 }
 

@@ -13,7 +13,7 @@ struct ShowsView: View {
             ScrollView {
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 160), spacing: 20)], spacing: 20) {
                     ForEach(store.shows.indices, id: \.self) { i in
-                        let show: Season = store.shows[i]
+                        let show: Show = store.shows[i]
                         NavigationLink(destination: SeriesFeatureAssembly.seasonsFeature) {
                             VStack {
                                 AsyncImage(url: URL(string: show.image.medium))

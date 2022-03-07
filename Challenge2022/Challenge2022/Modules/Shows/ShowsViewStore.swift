@@ -5,7 +5,7 @@ import SwiftUI
 
 public final class ShowsViewStore: ObservableObject {
     
-    @Published var shows: [Season] = []
+    @Published var shows: [Show] = []
     
     init() {
     

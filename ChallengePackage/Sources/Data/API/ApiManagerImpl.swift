@@ -13,7 +13,7 @@ public class ApiManagerImpl: ApiManager {
 
 extension ApiManagerImpl {
     
-    public func getShows(page: Int, completion: @escaping (Result<[SeasonTO], Error>) -> Void) {
+    public func getShows(page: Int, completion: @escaping (Result<[ShowTO], Error>) -> Void) {
         provider.requestFilterErrors(.getShows(page: page),
                                      completion: MoyaCompletionTransformer.mapJsonDecoder(completion))
     }

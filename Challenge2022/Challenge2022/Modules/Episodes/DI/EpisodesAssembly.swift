@@ -13,7 +13,7 @@ public class EpisodesAssembly {
         
         let store: EpisodesViewStore = EpisodesViewStore()
         var view: EpisodesView = EpisodesView(store: store)
-        let params = GetEpisodeUseCaseParams(id: 1)
+        let params = GetEpisodeUseCaseParams(id: 993)
         view.onLoaded = {
             self.getEpisodesUseCase.execute(params: params, completion: { result in
                 switch result {

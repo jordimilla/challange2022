@@ -4,7 +4,7 @@ import Domain
 import Combine
 
 public protocol ApiManager {
-    func getShows(page: Int, completion: @escaping (Result<[SeasonTO], Error>) -> Void)
+    func getShows(page: Int, completion: @escaping (Result<[ShowTO], Error>) -> Void)
     func getSeasons(id: Int, completion: @escaping (Result<[SeasonTO], Error>) -> Void)
     func getEpisodes(id: Int, completion: @escaping (Result<[EpisodeTO], Error>) -> Void)
 }
