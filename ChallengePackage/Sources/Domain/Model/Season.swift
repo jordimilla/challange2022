@@ -1,9 +1,9 @@
 import Foundation
 
-public struct Season: Codable {
-    var id: Int
-    var name: String
-    var image: SeasonImage
+public struct Season: Codable, Identifiable {
+    public var id: Int
+    public var name: String
+    public var image: SeasonImage
     
     public init(id: Int, name: String, image: SeasonImage) {
         self.id = id
@@ -13,8 +13,8 @@ public struct Season: Codable {
 }
 
 public struct SeasonImage: Codable {
-    var medium: String
-    var original: String
+    public var medium: String
+    public var original: String
     
     public init(medium: String, original: String) {
         self.medium = medium

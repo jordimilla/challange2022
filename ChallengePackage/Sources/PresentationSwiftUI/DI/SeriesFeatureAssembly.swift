@@ -2,7 +2,8 @@ import Foundation
 import Domain
 import Data
 import SwiftUI
-import PresentationSwiftUI
+
+public typealias FeatureProvider<T> = ((T) -> View?)
 
 public class SeriesFeatureAssembly {
     
@@ -10,8 +11,10 @@ public class SeriesFeatureAssembly {
         ShowsAssembly(getShowsUseCase: UseCaseAssembly.makeGetShowsUseCase()).build()
     }
     
-    public static var seasonsFeature: some View {
-        SeasonsAssembly(getSeasonsUseCase: UseCaseAssembly.makeGetSeasonsUseCase()).build()
+    public static var seasonsFeature: FeatureProvider<Int> = { id in
+        SeasonsAssembly(getSeasonsUseCase: UseCaseAssembly.makeGetSeasonsUseCase(),
+                        id: id)
+            .build()
     }
     
     public static var episodesFeature: some View {

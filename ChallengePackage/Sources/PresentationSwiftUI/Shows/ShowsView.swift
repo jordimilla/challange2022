@@ -1,8 +1,7 @@
 import SwiftUI
+import Domain
 
 struct ShowsView: View {
-    
-    private var threeColumnGrid = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
     
     @ObservedObject var store: ShowsViewStore
     
@@ -10,10 +9,24 @@ struct ShowsView: View {
     var goToDetail: () -> Void = {}
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-            .onAppear {
-                onLoaded()
+        NavigationView {
+            ScrollView {
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 160), spacing: 20)], spacing: 20) {
+                    ForEach(store.shows.indices, id: \.self) { i in
+                        let show: Season = store.shows[i]
+                        NavigationLink(destination: SeriesFeatureAssembly.seasonsFeature) {
+                            VStack {
+                                AsyncImage(url: URL(string: show.image.medium))
+                                    .scaledToFill()
+                                Text(show.name)
+                            }
+                        }
+                    }
+                }.onAppear {
+                    onLoaded()
+                }
             }
+        }
     }
 }
 
