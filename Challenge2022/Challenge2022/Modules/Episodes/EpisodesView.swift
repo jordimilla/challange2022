@@ -23,6 +23,7 @@ struct EpisodesView: View {
                     Spacer()
                 }
             }
+            .navigationTitle("Episodes")
         }.onAppear {
             onLoaded()
         }

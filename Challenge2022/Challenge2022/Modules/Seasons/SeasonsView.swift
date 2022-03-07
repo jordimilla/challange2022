@@ -16,9 +16,11 @@ struct SeasonsView: View {
                     Text("Season \(i + 1)")
                 }
             }
+            .navigationTitle("Seassons")
         }.onAppear {
             onLoaded()
         }.background(.black)
+        .navigationViewStyle(.stack)
     }
 }
 

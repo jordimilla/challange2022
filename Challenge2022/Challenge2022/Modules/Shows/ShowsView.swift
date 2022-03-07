@@ -26,7 +26,9 @@ struct ShowsView: View {
                     onLoaded()
                 }
             }
+            .navigationTitle("Shows")
         }
+        .navigationViewStyle(.stack)
     }
 }
 
