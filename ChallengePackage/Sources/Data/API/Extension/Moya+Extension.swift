@@ -44,15 +44,5 @@ extension MoyaProvider where Target: TargetType {
             }
         }
     }
-    
-//    func execute<T: Decodable>(_ target: Target) -> AnyPublisher<T, Error> {
-//        return request(target)
-//            .tryMap { result -> T in
-//                let value = try JSONDecoder().decode(T.self, from: result.data)
-//                return value
-//                
-//            }
-//            .eraseToAnyPublisher()
-//    }
 }
 

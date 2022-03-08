@@ -6,12 +6,11 @@ struct SeasonsView: View {
     @ObservedObject var store: SeasonsViewStore
     
     var onLoaded: () -> Void = {}
-    var goToDetail: () -> Void = {}
 
     var body: some View {
         List(store.seasons.indices, id: \.self) { i in
             let season: Season = store.seasons[i]
-            NavigationLink(destination: SeriesFeatureAssembly.episodesFeature) {
+            NavigationLink(destination: SeriesFeatureAssembly.episodesFeature(season.id)) {
                 HStack {
                     Text("Season \(i + 1)")
                 }

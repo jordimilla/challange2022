@@ -6,7 +6,6 @@ struct ShowsView: View {
     @ObservedObject var store: ShowsViewStore
     
     var onLoaded: () -> Void = {}
-    var goToDetail: () -> Void = {}
 
     var body: some View {
         NavigationView {
@@ -14,7 +13,7 @@ struct ShowsView: View {
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 160), spacing: 20)], spacing: 20) {
                     ForEach(store.shows.indices, id: \.self) { i in
                         let show: Show = store.shows[i]
-                        NavigationLink(destination: SeriesFeatureAssembly.seasonsFeature) {
+                        NavigationLink(destination: SeriesFeatureAssembly.seasonsFeature(show.id)) {
                             VStack {
                                 AsyncImage(url: URL(string: show.image.medium))
                                     .scaledToFill()

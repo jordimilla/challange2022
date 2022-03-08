@@ -2,23 +2,29 @@ import Foundation
 import Domain
 import SwiftUI
 
-public typealias FeatureProvider<T> = ((T) -> View)
+public typealias FeatureProvider<T> = ((T) -> AnyView)
 
 public class SeriesFeatureAssembly {
     
-    public static var showsFeature: some View {
-        ShowsAssembly(getShowsUseCase: UseCaseAssembly.makeGetShowsUseCase()).build()
+    public static var showsFeature: AnyView {
+        ShowsAssembly(getShowsUseCase: UseCaseAssembly.makeGetShowsUseCase()).build().wrapAnyView()
     }
     
-    public static var seasonsFeature: some View {
+    public static var seasonsFeature: FeatureProvider<Int> = { id in
         SeasonsAssembly(getSeasonsUseCase: UseCaseAssembly.makeGetSeasonsUseCase(),
-                        id: 251)
-            .build()
+                        id: id)
+            .build().wrapAnyView()
     }
     
-    public static var episodesFeature: some View {
+    public static var episodesFeature: FeatureProvider<Int> = { id in
         EpisodesAssembly(getEpisodesUseCase: UseCaseAssembly.makeGetEpisodesUseCase(),
-                         id: 993)
-            .build()
+                         id: id)
+            .build().wrapAnyView()
+    }
+}
+
+extension View {
+    func wrapAnyView() -> AnyView {
+        AnyView(self)
     }
 }

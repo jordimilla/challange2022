@@ -27,11 +27,7 @@ public class SeasonsAssembly {
                 }
             })
         }
-        
-        view.goToDetail = {
-           
-        }
-        
+                
         return view
     }
 

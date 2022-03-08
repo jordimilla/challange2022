@@ -24,11 +24,7 @@ public class ShowsAssembly {
                 }
             })
         }
-        
-        view.goToDetail = {
-           
-        }
-        
+                
         return view
     }
 

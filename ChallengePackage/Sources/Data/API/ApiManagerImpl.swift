@@ -27,9 +27,5 @@ extension ApiManagerImpl {
         provider.requestFilterErrors(.getMovieBy(id: id),
                                      completion: MoyaCompletionTransformer.mapJsonDecoder(completion))
     }
-    
-//    public func getMoviesCombine() -> AnyPublisher<ListMoviesTO, Error> {
-//        return provider.execute(.getMovies)
-//    }
 }
 
